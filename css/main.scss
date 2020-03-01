@@ -1,3 +1,5 @@
+/* ========== GLOBAL ========== */
+
 * {
     margin: 0;
     padding: 0;
@@ -24,12 +26,20 @@ body {
     background-color: var(--clr-grey-1);
 }
 
+/* ========== CONTAINER AND SECTIONS ========== */
+
 .container {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
+section {
+    margin: 12rem 0;
+}
+
+/* ========== TYPOGRAPHY ========== */
 
 h1 {
     font-family: "Teko";
@@ -40,6 +50,8 @@ h1 {
 p {
     font-size: 1.8rem;
 }
+
+/* ========== HERO ========== */
 
 .hero {
     height: 80vh;
@@ -62,6 +74,8 @@ p {
         color: var(--clr-primary);
     }
 }
+
+/* ========== BUTTONS ========== */
 
 .button {
     position: relative;
