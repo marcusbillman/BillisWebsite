@@ -5,6 +5,7 @@
   border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-weight: normal;
 }
 
 :root {
@@ -43,6 +44,16 @@ h1 {
   font-family: "Teko";
   font-size: 9.6rem;
   letter-spacing: 1rem;
+}
+
+h2 {
+  font-family: "Teko";
+  font-size: 6.4rem;
+  color: white;
+}
+
+h2 .heading__faded {
+  color: var(--clr-grey-3);
 }
 
 p {
