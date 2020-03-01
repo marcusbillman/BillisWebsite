@@ -60,6 +60,11 @@ h2 .heading__faded {
   color: var(--clr-grey-3);
 }
 
+h3 {
+  font-family: "Teko";
+  font-size: 4.8rem;
+}
+
 p {
   font-size: 1.8rem;
 }
@@ -115,11 +120,18 @@ a {
   color: var(--clr-primary);
 }
 
+.hero .button {
+  margin-right: 0;
+}
+
 /* ========== BIOGRAPHY ========== */
 .biography {
   background-color: var(--clr-grey-2);
   border-left: 0.3rem solid var(--clr-primary);
   padding: 2.4rem;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
 }
 
 .biography .material-icons {
@@ -129,6 +141,47 @@ a {
 .biography a {
   margin-top: 2rem;
   font-size: 1.4rem;
+}
+
+/* ========== MUSIC ========== */
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.featured-song {
+  background: var(--clr-grey-2);
+  background: -webkit-gradient(linear, left top, right top, from(#242424), to(rgba(36, 36, 36, 0)));
+  background: linear-gradient(to right, #242424 0%, rgba(36, 36, 36, 0) 100%);
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+  padding: 3.2rem 0;
+}
+
+.featured-song__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.featured-song__title {
+  color: var(--clr-primary);
+  margin-bottom: -0.6rem;
+}
+
+.featured-song .song__cover {
+  width: 16rem;
+  -webkit-transform: translateX(-3.2rem);
+          transform: translateX(-3.2rem);
 }
 
 /* ========== BUTTONS ========== */
@@ -148,6 +201,7 @@ a {
   text-decoration: none;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%);
+  margin-right: 2.4rem;
 }
 
 .button--primary {
