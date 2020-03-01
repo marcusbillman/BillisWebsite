@@ -27,6 +27,10 @@ body {
     background-color: var(--clr-grey-1);
 }
 
+.primary {
+    color: var(--clr-primary);
+}
+
 /* ========== CONTAINER AND SECTIONS ========== */
 
 .container {
@@ -61,6 +65,18 @@ p {
     font-size: 1.8rem;
 }
 
+a {
+    color: var(--clr-primary);
+    font-size: 1.8rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.material-icons {
+    margin-right: 0.4em;
+}
+
 /* ========== HERO ========== */
 
 .hero {
@@ -82,6 +98,21 @@ p {
     }
     &__heading {
         color: var(--clr-primary);
+    }
+}
+
+/* ========== BIOGRAPHY ========== */
+
+.biography {
+    background-color: var(--clr-grey-2);
+    border-left: 0.3rem solid var(--clr-primary);
+    padding: 2.4rem;
+    .material-icons {
+        font-size: 1.4rem;
+    }
+    a {
+        margin-top: 2rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -138,7 +169,7 @@ p {
     &--outlined.button--primary::before {
         background-color: var(--clr-primary);
     }
-    .material-icons {
-        margin-right: 0.8rem;
-    }
+    // .material-icons {
+    //     margin-right: 0.8rem;
+    // }
 }

@@ -27,6 +27,10 @@ body {
   background-color: var(--clr-grey-1);
 }
 
+.primary {
+  color: var(--clr-primary);
+}
+
 /* ========== CONTAINER AND SECTIONS ========== */
 .container {
   width: 100%;
@@ -58,6 +62,22 @@ h2 .heading__faded {
 
 p {
   font-size: 1.8rem;
+}
+
+a {
+  color: var(--clr-primary);
+  font-size: 1.8rem;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.material-icons {
+  margin-right: 0.4em;
 }
 
 /* ========== HERO ========== */
@@ -93,6 +113,22 @@ p {
 
 .hero__heading {
   color: var(--clr-primary);
+}
+
+/* ========== BIOGRAPHY ========== */
+.biography {
+  background-color: var(--clr-grey-2);
+  border-left: 0.3rem solid var(--clr-primary);
+  padding: 2.4rem;
+}
+
+.biography .material-icons {
+  font-size: 1.4rem;
+}
+
+.biography a {
+  margin-top: 2rem;
+  font-size: 1.4rem;
 }
 
 /* ========== BUTTONS ========== */
@@ -139,9 +175,5 @@ p {
 
 .button--outlined.button--primary::before {
   background-color: var(--clr-primary);
-}
-
-.button .material-icons {
-  margin-right: 0.8rem;
 }
 /*# sourceMappingURL=main.css.map */
