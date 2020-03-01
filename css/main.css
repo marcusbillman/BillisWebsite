@@ -74,11 +74,51 @@ p {
 }
 
 .button {
+  position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
+  background-color: var(--clr-grey-3);
+  padding: 1.6rem 3.2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%);
+}
+
+.button--primary {
+  background-color: var(--clr-primary);
+}
+
+.button--outlined {
+  background-color: transparent;
+  -webkit-clip-path: none;
+          clip-path: none;
+}
+
+.button--outlined::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--clr-grey-3);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%, 0 0.3rem, 0.3rem 0.3rem, 0.3rem calc(100% - 0.3rem), calc(100% - 1.4rem) calc(100% - 0.3rem), calc(100% - 0.3rem) calc(100% - 1.4rem), calc(100% - 0.3rem) 0.3rem, 0 0.3rem);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%, 0 0.3rem, 0.3rem 0.3rem, 0.3rem calc(100% - 0.3rem), calc(100% - 1.4rem) calc(100% - 0.3rem), calc(100% - 0.3rem) calc(100% - 1.4rem), calc(100% - 0.3rem) 0.3rem, 0 0.3rem);
+}
+
+.button--outlined.button--primary::before {
+  background-color: var(--clr-primary);
+}
+
+.button .material-icons {
+  margin-right: 0.8rem;
 }
 /*# sourceMappingURL=main.css.map */

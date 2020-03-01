@@ -61,6 +61,57 @@ p {
 }
 
 .button {
+    position: relative;
     display: inline-flex;
     align-items: center;
+    color: white;
+    background-color: var(--clr-grey-3);
+    padding: 1.6rem 3.2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% - 1.2rem),
+        calc(100% - 1.2rem) 100%,
+        0 100%
+    );
+    &--primary {
+        background-color: var(--clr-primary);
+    }
+    &--outlined {
+        background-color: transparent;
+        clip-path: none;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--clr-grey-3);
+            clip-path: polygon(
+                0 0,
+                100% 0,
+                100% calc(100% - 1.2rem),
+                calc(100% - 1.2rem) 100%,
+                0 100%,
+                0 0.3rem,
+                0.3rem 0.3rem,
+                0.3rem calc(100% - 0.3rem),
+                calc(100% - 1.4rem) calc(100% - 0.3rem),
+                calc(100% - 0.3rem) calc(100% - 1.4rem),
+                calc(100% - 0.3rem) 0.3rem,
+                0 0.3rem
+            );
+        }
+    }
+    &--outlined.button--primary::before {
+        background-color: var(--clr-primary);
+    }
+    .material-icons {
+        margin-right: 0.8rem;
+    }
 }
