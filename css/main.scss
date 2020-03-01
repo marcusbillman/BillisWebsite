@@ -27,3 +27,40 @@ body {
     max-width: 1400px;
     margin: 0 auto;
 }
+
+h1 {
+    font-family: "Teko";
+    font-size: 9.6rem;
+    letter-spacing: 1rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+.hero {
+    height: 80vh;
+    background-image: url("../img/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__above-heading {
+        color: white;
+        font-family: "Teko";
+        font-size: 3rem;
+    }
+    &__heading {
+        color: var(--clr-primary);
+    }
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+}
