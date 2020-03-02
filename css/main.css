@@ -138,7 +138,7 @@ a {
 /* ========== HERO ========== */
 .hero {
   height: 80vh;
-  background-image: url("../img/hero.png");
+  background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
