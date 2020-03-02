@@ -356,4 +356,22 @@ a {
   padding: 1.1rem 2.4rem;
   margin-right: 1.6rem;
 }
+
+/* ========== SOCIALS ========== */
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.socials__social {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid white;
+}
+
+.socials__social:not(:last-child) {
+  margin-right: 1.6rem;
+}
 /*# sourceMappingURL=main.css.map */

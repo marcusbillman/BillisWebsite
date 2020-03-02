@@ -318,3 +318,18 @@ a {
         margin-right: 1.6rem;
     }
 }
+
+/* ========== SOCIALS ========== */
+
+.socials {
+    display: flex;
+    list-style: none;
+    &__social {
+        width: 2rem;
+        height: 2rem;
+        border: 2px solid white;
+        &:not(:last-child) {
+            margin-right: 1.6rem;
+        }
+    }
+}
