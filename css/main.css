@@ -79,6 +79,58 @@ a {
   margin-right: 0.4em;
 }
 
+/* ========== NAVBAR ========== */
+.navbar {
+  height: 14.4rem;
+  padding: 0 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(50%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.navbar__logo {
+  height: 7.2rem;
+}
+
+.navbar__links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__link {
+  font-family: "Teko";
+  font-size: 2.2rem;
+  font-weight: normal;
+  letter-spacing: 0.4rem;
+  color: white;
+  opacity: 0.7;
+}
+
+.navbar__link:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.navbar__link a {
+  font-size: inherit;
+  color: inherit;
+}
+
 /* ========== HERO ========== */
 .hero {
   height: 80vh;
