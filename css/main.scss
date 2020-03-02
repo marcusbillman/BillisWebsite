@@ -222,12 +222,54 @@ a {
     }
 }
 
+/* ========== GALLERY ========== */
+
+.gallery-section {
+    background-color: $clr-grey-2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12.8rem 0;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.4rem;
+}
+
+.gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.6rem;
+    margin: 0 5rem;
+    .button {
+        width: 20rem;
+        margin-right: 0;
+        grid-column: 4;
+    }
+}
+
+.gallery__image {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.gallery__arrow {
+    color: $clr-grey-3;
+    .material-icons {
+        font-size: 5rem;
+        margin: 0;
+    }
+}
+
 /* ========== BUTTONS ========== */
 
 .button {
     position: relative;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     color: white;
     background-color: $clr-grey-3;
     padding: 1.6rem 3.2rem;

@@ -245,6 +245,62 @@ a {
   margin-left: auto;
 }
 
+/* ========== GALLERY ========== */
+.gallery-section {
+  background-color: #242424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12.8rem 0;
+}
+
+.gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4.4rem;
+}
+
+.gallery-grid {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.6rem;
+  margin: 0 5rem;
+}
+
+.gallery-grid .button {
+  width: 20rem;
+  margin-right: 0;
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+.gallery__image {
+  width: 20rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__arrow {
+  color: #474747;
+}
+
+.gallery__arrow .material-icons {
+  font-size: 5rem;
+  margin: 0;
+}
+
 /* ========== BUTTONS ========== */
 .button {
   position: relative;
@@ -254,6 +310,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   background-color: #474747;
   padding: 1.6rem 3.2rem;
