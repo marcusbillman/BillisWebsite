@@ -1,19 +1,17 @@
 /* ========== GLOBAL ========== */
 
+$clr-primary: #ff7700;
+$clr-grey-1: #1a1a1a;
+$clr-grey-2: #242424;
+$clr-grey-3: #474747;
+$clr-grey-4: #c2c2c2;
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
     font-weight: normal;
-}
-
-:root {
-    --clr-primary: #ff7700;
-    --clr-grey-1: #1a1a1a;
-    --clr-grey-2: #242424;
-    --clr-grey-3: #474747;
-    --clr-grey-4: #c2c2c2;
 }
 
 html {
@@ -23,12 +21,12 @@ html {
 
 body {
     font-family: "Work Sans", sans-serif;
-    color: var(--clr-grey-4);
-    background-color: var(--clr-grey-1);
+    color: $clr-grey-4;
+    background-color: $clr-grey-1;
 }
 
 .primary {
-    color: var(--clr-primary);
+    color: $clr-primary;
 }
 
 /* ========== CONTAINER AND SECTIONS ========== */
@@ -58,7 +56,7 @@ h2 {
     color: white;
     margin-bottom: 4rem;
     .heading__faded {
-        color: var(--clr-grey-3);
+        color: $clr-grey-3;
     }
 }
 
@@ -72,7 +70,7 @@ p {
 }
 
 a {
-    color: var(--clr-primary);
+    color: $clr-primary;
     font-size: 1.8rem;
     text-decoration: none;
     display: inline-flex;
@@ -104,7 +102,7 @@ a {
         font-size: 3rem;
     }
     &__heading {
-        color: var(--clr-primary);
+        color: $clr-primary;
     }
     .button {
         margin-right: 0;
@@ -114,8 +112,8 @@ a {
 /* ========== BIOGRAPHY ========== */
 
 .biography {
-    background-color: var(--clr-grey-2);
-    border-left: 0.3rem solid var(--clr-primary);
+    background-color: $clr-grey-2;
+    border-left: 0.3rem solid $clr-primary;
     padding: 2.4rem;
     grid-column: 1 / span 2;
     .material-icons {
@@ -137,7 +135,7 @@ a {
 }
 
 .featured-song {
-    background: var(--clr-grey-2);
+    background: $clr-grey-2;
     background: linear-gradient(
         to right,
         rgba(36, 36, 36, 1) 0%,
@@ -153,7 +151,7 @@ a {
         margin-left: 1.4rem;
     }
     &__title {
-        color: var(--clr-primary);
+        color: $clr-primary;
         margin-bottom: -0.6rem;
     }
     &__cover {
@@ -163,7 +161,7 @@ a {
     .line {
         height: 0.3rem;
         width: 100%;
-        background: var(--clr-grey-3);
+        background: $clr-grey-3;
         background: linear-gradient(
             to right,
             rgba(71, 71, 71, 1) 0%,
@@ -192,7 +190,7 @@ a {
     display: inline-flex;
     align-items: center;
     color: white;
-    background-color: var(--clr-grey-3);
+    background-color: $clr-grey-3;
     padding: 1.6rem 3.2rem;
     font-size: 1.6rem;
     font-weight: bold;
@@ -206,7 +204,7 @@ a {
     );
     margin-right: 2.4rem;
     &--primary {
-        background-color: var(--clr-primary);
+        background-color: $clr-primary;
     }
     &--outlined {
         background-color: transparent;
@@ -219,7 +217,7 @@ a {
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: var(--clr-grey-3);
+            background-color: $clr-grey-3;
             clip-path: polygon(
                 0 0,
                 100% 0,
@@ -237,7 +235,7 @@ a {
         }
     }
     &--outlined.button--primary::before {
-        background-color: var(--clr-primary);
+        background-color: $clr-primary;
     }
     &--small {
         font-size: 1.1rem;
