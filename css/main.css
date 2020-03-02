@@ -32,7 +32,7 @@ body {
 }
 
 section {
-  margin: 12rem 0;
+  margin-bottom: 12rem;
 }
 
 /* ========== TYPOGRAPHY ========== */
@@ -107,6 +107,10 @@ a {
 }
 
 .navbar__links {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,7 +174,7 @@ a {
   margin-right: 0;
 }
 
-/* ========== BIOGRAPHY ========== */
+/* ========== ABOUT ========== */
 .biography {
   background-color: #242424;
   border-left: 0.3rem solid #ff7700;

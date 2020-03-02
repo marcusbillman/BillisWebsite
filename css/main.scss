@@ -46,7 +46,7 @@ body {
 }
 
 section {
-    margin: 12rem 0;
+    margin-bottom: 12rem;
 }
 
 /* ========== TYPOGRAPHY ========== */
@@ -113,6 +113,9 @@ a {
         height: 7.2rem;
     }
     &__links {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         list-style: none;
         display: flex;
     }
