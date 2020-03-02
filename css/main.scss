@@ -79,6 +79,7 @@ a {
 }
 
 .material-icons {
+    font-size: 1.4em;
     margin-right: 0.4em;
 }
 
@@ -130,6 +131,7 @@ a {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8rem 0;
     align-items: center;
 }
 
@@ -146,11 +148,14 @@ a {
         display: flex;
         align-items: center;
     }
+    &__info {
+        margin-left: 1.4rem;
+    }
     &__title {
         color: var(--clr-primary);
         margin-bottom: -0.6rem;
     }
-    .song__cover {
+    &__cover {
         width: 16rem;
         transform: translateX(-3.2rem);
     }
@@ -163,6 +168,19 @@ a {
             rgba(71, 71, 71, 1) 0%,
             rgba(71, 71, 71, 0) 100%
         );
+    }
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    &__cover {
+        width: 12rem;
+        margin-right: 3.2rem;
+    }
+    &__title {
+        font-size: 3.6rem;
+        margin-bottom: 0.4rem;
     }
 }
 
@@ -219,5 +237,10 @@ a {
     }
     &--outlined.button--primary::before {
         background-color: var(--clr-primary);
+    }
+    &--small {
+        font-size: 1.1rem;
+        padding: 1.1rem 2.4rem;
+        margin-right: 1.6rem;
     }
 }
