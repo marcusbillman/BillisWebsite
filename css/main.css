@@ -374,4 +374,26 @@ a {
 .socials__social:not(:last-child) {
   margin-right: 1.6rem;
 }
+
+/* ========== FOOTER ========== */
+.footer {
+  margin-bottom: 7.2rem;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__watermark {
+  height: 13.6rem;
+  opacity: 0.05;
+}
 /*# sourceMappingURL=main.css.map */

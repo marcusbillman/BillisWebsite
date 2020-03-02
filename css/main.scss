@@ -333,3 +333,18 @@ a {
         }
     }
 }
+
+/* ========== FOOTER ========== */
+
+.footer {
+    margin-bottom: 7.2rem;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__watermark {
+        height: 13.6rem;
+        opacity: 0.05;
+    }
+}
