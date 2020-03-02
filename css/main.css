@@ -143,7 +143,7 @@ a {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-gap: 8rem 0;
+  grid-gap: 8rem 2.4rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -208,6 +208,41 @@ a {
 .song__title {
   font-size: 3.6rem;
   margin-bottom: 0.4rem;
+}
+
+/* ========== FOLLOW ========== */
+.contact-grid {
+  justify-items: center;
+}
+
+.card {
+  color: white;
+  list-style: none;
+  background-color: #242424;
+  width: 100%;
+  padding: 3.2rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%);
+}
+
+.card__item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.card a {
+  width: 100%;
+  color: inherit;
+  font-weight: bold;
+}
+
+.card a::after {
+  content: "keyboard_arrow_right";
+  color: #474747;
+  font-family: "Material Icons";
+  font-size: 1.4em;
+  line-height: 1;
+  display: inline-block;
+  margin-left: auto;
 }
 
 /* ========== BUTTONS ========== */
