@@ -193,6 +193,12 @@ a {
   font-size: 1.4rem;
 }
 
+.texture {
+  height: 8rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
 /* ========== MUSIC ========== */
 .grid {
   display: -ms-grid;
