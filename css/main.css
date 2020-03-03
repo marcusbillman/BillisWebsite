@@ -431,14 +431,43 @@ a {
   list-style: none;
 }
 
-.socials__social {
-  width: 2rem;
-  height: 2rem;
-  border: 2px solid white;
+.socials__item {
+  opacity: 0.7;
 }
 
-.socials__social:not(:last-child) {
+.socials__item:not(:last-child) {
   margin-right: 1.6rem;
+}
+
+.socials__link {
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.socials__link--spotify {
+  background-image: url("../img/icons/spotify-brands.svg");
+}
+
+.socials__link--apple-music {
+  background-image: url("../img/icons/apple-brands.svg");
+}
+
+.socials__link--amazon-music {
+  background-image: url("../img/icons/amazon-brands.svg");
+}
+
+.socials__link--youtube {
+  background-image: url("../img/icons/youtube-brands.svg");
+}
+
+.socials__link--instagram {
+  background-image: url("../img/icons/instagram-brands.svg");
+}
+
+.socials__link--facebook {
+  background-image: url("../img/icons/facebook-f-brands.svg");
 }
 
 /* ========== FOOTER ========== */

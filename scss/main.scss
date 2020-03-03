@@ -380,12 +380,34 @@ a {
 .socials {
     display: flex;
     list-style: none;
-    &__social {
-        width: 2rem;
-        height: 2rem;
-        border: 2px solid white;
+    &__item {
+        opacity: 0.7;
         &:not(:last-child) {
             margin-right: 1.6rem;
+        }
+    }
+    &__link {
+        width: 2rem;
+        height: 2rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        &--spotify {
+            background-image: url("../img/icons/spotify-brands.svg");
+        }
+        &--apple-music {
+            background-image: url("../img/icons/apple-brands.svg");
+        }
+        &--amazon-music {
+            background-image: url("../img/icons/amazon-brands.svg");
+        }
+        &--youtube {
+            background-image: url("../img/icons/youtube-brands.svg");
+        }
+        &--instagram {
+            background-image: url("../img/icons/instagram-brands.svg");
+        }
+        &--facebook {
+            background-image: url("../img/icons/facebook-f-brands.svg");
         }
     }
 }
