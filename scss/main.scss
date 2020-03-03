@@ -140,9 +140,11 @@ a {
 
 .hero {
     height: 80vh;
+    min-height: 60rem;
     background-image: url("../img/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     &__content {
         height: 100%;
         display: flex;
