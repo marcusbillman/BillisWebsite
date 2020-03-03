@@ -257,8 +257,13 @@ a {
     width: 100%;
     padding: 3.2rem;
     clip-path: $notch;
-    &__item:not(:last-child) {
-        margin-bottom: 1.6rem;
+    &__item {
+        .icon {
+            margin-right: 1.6rem;
+        }
+        &:not(:last-child) {
+            margin-bottom: 1.6rem;
+        }
     }
     a {
         width: 100%;
@@ -390,30 +395,32 @@ a {
             margin-right: 1.6rem;
         }
     }
-    &__link {
-        width: 2rem;
-        height: 2rem;
-        background-repeat: no-repeat;
-        background-position: center;
-        &--spotify {
-            background-image: url("../img/icons/spotify-brands.svg");
-        }
-        &--apple-music {
-            background-image: url("../img/icons/apple-brands.svg");
-        }
-        &--amazon-music {
-            background-image: url("../img/icons/amazon-brands.svg");
-        }
-        &--youtube {
-            background-image: url("../img/icons/youtube-brands.svg");
-        }
-        &--instagram {
-            background-image: url("../img/icons/instagram-brands.svg");
-        }
-        &--facebook {
-            background-image: url("../img/icons/facebook-f-brands.svg");
-        }
-    }
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon--spotify {
+    background-image: url("../img/icons/spotify-brands.svg");
+}
+.icon--apple-music {
+    background-image: url("../img/icons/apple-brands.svg");
+}
+.icon--amazon-music {
+    background-image: url("../img/icons/amazon-brands.svg");
+}
+.icon--youtube {
+    background-image: url("../img/icons/youtube-brands.svg");
+}
+.icon--instagram {
+    background-image: url("../img/icons/instagram-brands.svg");
+}
+.icon--facebook {
+    background-image: url("../img/icons/facebook-f-brands.svg");
 }
 
 /* ========== FOOTER ========== */

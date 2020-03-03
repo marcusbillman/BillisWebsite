@@ -289,6 +289,10 @@ a {
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%);
 }
 
+.card__item .icon {
+  margin-right: 1.6rem;
+}
+
 .card__item:not(:last-child) {
   margin-bottom: 1.6rem;
 }
@@ -443,34 +447,34 @@ a {
   margin-right: 1.6rem;
 }
 
-.socials__link {
+.icon {
   width: 2rem;
   height: 2rem;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.socials__link--spotify {
+.icon--spotify {
   background-image: url("../img/icons/spotify-brands.svg");
 }
 
-.socials__link--apple-music {
+.icon--apple-music {
   background-image: url("../img/icons/apple-brands.svg");
 }
 
-.socials__link--amazon-music {
+.icon--amazon-music {
   background-image: url("../img/icons/amazon-brands.svg");
 }
 
-.socials__link--youtube {
+.icon--youtube {
   background-image: url("../img/icons/youtube-brands.svg");
 }
 
-.socials__link--instagram {
+.icon--instagram {
   background-image: url("../img/icons/instagram-brands.svg");
 }
 
-.socials__link--facebook {
+.icon--facebook {
   background-image: url("../img/icons/facebook-f-brands.svg");
 }
 
