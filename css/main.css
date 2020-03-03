@@ -391,10 +391,12 @@ a {
 }
 
 .button--primary {
+  color: black;
   background-color: #ff7700;
 }
 
 .button--outlined {
+  color: white;
   background-color: transparent;
   -webkit-clip-path: none;
           clip-path: none;

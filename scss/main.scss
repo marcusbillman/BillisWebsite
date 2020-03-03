@@ -335,9 +335,11 @@ a {
     clip-path: $notch;
     margin-right: 2.4rem;
     &--primary {
+        color: black;
         background-color: $clr-primary;
     }
     &--outlined {
+        color: white;
         background-color: transparent;
         clip-path: none;
         &::before {
