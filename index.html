@@ -16,7 +16,7 @@
     </head>
     <body>
         <nav class="navbar">
-            <a class="navbar__logo-link" href="">
+            <a class="navbar__logo-link" href="/">
                 <img
                     class="navbar__logo"
                     src="img/billis_logo.png"
@@ -24,15 +24,19 @@
                 />
             </a>
             <ul class="navbar__links">
-                <li class="navbar__link"><a href="">MUSIC</a></li>
-                <li class="navbar__link"><a href="">FOLLOW</a></li>
-                <li class="navbar__link"><a href="">PHOTOS</a></li>
+                <li class="navbar__link"><a href="#music-section">MUSIC</a></li>
+                <li class="navbar__link">
+                    <a href="#follow-section">FOLLOW</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="#gallery-section">PHOTOS</a>
+                </li>
             </ul>
             <ul class="socials navbar__socials">
                 <li class="socials__item">
                     <a
                         class="socials__link icon icon--spotify"
-                        href=""
+                        href="https://open.spotify.com/artist/6LIhcBCi82WEdOgOzBJjyd"
                         aria-label="Spotify"
                     ></a>
                 </li>
@@ -46,14 +50,14 @@
                 <li class="socials__item">
                     <a
                         class="socials__link icon icon--amazon-music"
-                        href=""
+                        href="https://music.amazon.com/artists/B00G726Z2W"
                         aria-label="Amazon Music"
                     ></a>
                 </li>
                 <li class="socials__item">
                     <a
                         class="socials__link icon icon--youtube"
-                        href=""
+                        href="https://www.youtube.com/channel/UCePo5jCCZmoPxQzt-KfYw8w"
                         aria-label="YouTube"
                     ></a>
                 </li>
@@ -67,7 +71,7 @@
                 <li class="socials__item">
                     <a
                         class="socials__link icon icon--facebook"
-                        href=""
+                        href="https://www.facebook.com/Billis-814895571898839"
                         aria-label="Facebook"
                     ></a>
                 </li>
@@ -77,13 +81,13 @@
             <div class="hero__content">
                 <p class="hero__above-heading">THIS IS MY</p>
                 <h1 class="hero__heading">PSYCHOPEDIA</h1>
-                <a href="" class="button" aria-label="Scroll down"
+                <a href="#about-section" class="button" aria-label="Scroll down"
                     ><i class="material-icons">arrow_downward</i> DIVE IN</a
                 >
             </div>
         </section>
         <div class="container">
-            <section class="about-section">
+            <section class="about-section" id="about-section">
                 <h2 class="section__heading">
                     ABOUT
                 </h2>
@@ -103,7 +107,7 @@
                     <img class="texture" src="img/texture.svg" alt="" />
                 </div>
             </section>
-            <section class="music-section">
+            <section class="music-section" id="music-section">
                 <h2 class="section__heading">
                     MUSIC <span class="heading__faded">+ LYRICS</span>
                 </h2>
@@ -224,14 +228,17 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="follow-section" id="follow-section">
                 <h2 class="section__heading">
                     FOLLOW <span class="heading__faded">+ CONTACT</span>
                 </h2>
                 <div class="contact-grid grid">
                     <ul class="card">
                         <li class="card__item">
-                            <a href="" aria-label="Spotify">
+                            <a
+                                href="https://open.spotify.com/artist/6LIhcBCi82WEdOgOzBJjyd"
+                                aria-label="Spotify"
+                            >
                                 <span class="icon icon--spotify"></span>
                                 SPOTIFY
                             </a>
@@ -243,7 +250,10 @@
                             </a>
                         </li>
                         <li class="card__item">
-                            <a href="" aria-label="Amazon Music">
+                            <a
+                                href="https://music.amazon.com/artists/B00G726Z2W"
+                                aria-label="Amazon Music"
+                            >
                                 <span class="icon icon--amazon-music"></span>
                                 AMAZON MUSIC
                             </a>
@@ -251,7 +261,10 @@
                     </ul>
                     <ul class="card">
                         <li class="card__item">
-                            <a href="" aria-label="YouTube">
+                            <a
+                                href="https://www.youtube.com/channel/UCePo5jCCZmoPxQzt-KfYw8w"
+                                aria-label="YouTube"
+                            >
                                 <span class="icon icon--youtube"></span>
                                 YOUTUBE
                             </a>
@@ -263,7 +276,10 @@
                             </a>
                         </li>
                         <li class="card__item">
-                            <a href="" aria-label="Facebook">
+                            <a
+                                href="https://www.facebook.com/Billis-814895571898839"
+                                aria-label="Facebook"
+                            >
                                 <span class="icon icon--facebook"></span>
                                 FACEBOOK
                             </a>
@@ -271,14 +287,17 @@
                     </ul>
                     <div>
                         <p>Business inquiries:</p>
-                        <a class="contact__email" href="">
+                        <a
+                            class="contact__email"
+                            href="mailto:billisofficial@gmail.com"
+                        >
                             billisofficial@gmail.com
                         </a>
                     </div>
                 </div>
             </section>
         </div>
-        <section class="gallery-section">
+        <section class="gallery-section" id="gallery-section">
             <div class="gallery-container">
                 <a
                     class="gallery__arrow"
@@ -350,7 +369,7 @@
                     <li class="socials__item">
                         <a
                             class="socials__link icon icon--spotify"
-                            href=""
+                            href="https://open.spotify.com/artist/6LIhcBCi82WEdOgOzBJjyd"
                             aria-label="Spotify"
                         ></a>
                     </li>
@@ -364,14 +383,14 @@
                     <li class="socials__item">
                         <a
                             class="socials__link icon icon--amazon-music"
-                            href=""
+                            href="https://music.amazon.com/artists/B00G726Z2W"
                             aria-label="Amazon Music"
                         ></a>
                     </li>
                     <li class="socials__item">
                         <a
                             class="socials__link icon icon--youtube"
-                            href=""
+                            href="https://www.youtube.com/channel/UCePo5jCCZmoPxQzt-KfYw8w"
                             aria-label="YouTube"
                         ></a>
                     </li>
@@ -385,7 +404,7 @@
                     <li class="socials__item">
                         <a
                             class="socials__link icon icon--facebook"
-                            href=""
+                            href="https://www.facebook.com/Billis-814895571898839"
                             aria-label="Facebook"
                         ></a>
                     </li>
