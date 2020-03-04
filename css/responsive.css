@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+@media (max-width: 900px) {
+  .about-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .texture {
+    display: none;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
