@@ -207,13 +207,20 @@ a {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-gap: 8rem 2.4rem;
+  grid-gap: 2.4rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+.songs-grid {
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
 .featured-song {
+  -ms-grid-columns: minmax(40rem, 1fr) minmax(40rem, 1fr) minmax(0, 1fr);
+      grid-template-columns: minmax(40rem, 1fr) minmax(40rem, 1fr) minmax(0, 1fr);
   background: #242424;
   background: -webkit-gradient(linear, left top, right top, from(#242424), to(rgba(36, 36, 36, 0)));
   background: linear-gradient(to right, #242424 0%, rgba(36, 36, 36, 0) 100%);
@@ -221,6 +228,7 @@ a {
   -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
   padding: 3.2rem 0;
+  margin-bottom: 8rem;
 }
 
 .featured-song__left {

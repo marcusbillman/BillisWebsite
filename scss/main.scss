@@ -191,11 +191,16 @@ a {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 8rem 2.4rem;
+    grid-gap: 2.4rem;
     align-items: center;
 }
 
+.songs-grid {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
 .featured-song {
+    grid-template-columns: minmax(40rem, 1fr) minmax(40rem, 1fr) minmax(0, 1fr);
     background: $clr-grey-2;
     background: linear-gradient(
         to right,
@@ -204,6 +209,7 @@ a {
     );
     grid-column: 1 / span 3;
     padding: 3.2rem 0;
+    margin-bottom: 8rem;
     &__left {
         display: flex;
         align-items: center;
