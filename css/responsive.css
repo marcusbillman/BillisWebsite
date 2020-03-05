@@ -1,4 +1,7 @@
 @media (max-width: 900px) {
+  .navbar__logo {
+    height: 5.4rem;
+  }
   .navbar__links {
     display: none;
   }
