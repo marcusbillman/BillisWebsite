@@ -3,8 +3,53 @@
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .featured-song {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+  }
+  .featured-song__cover {
+    width: 12rem;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .featured-song__info {
+    margin-left: 3.2rem;
+  }
+  .featured-song__title {
+    font-size: 3.6rem;
+  }
+  .featured-song__right {
+    display: none;
+  }
   .texture {
     display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 6.4rem;
+  }
+  h2 {
+    font-size: 4.8rem;
+  }
+  .featured-song {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .featured-song__cover {
+    width: 9rem;
+  }
+  .featured-song .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+    margin-bottom: 1.6rem;
+  }
+  .song__cover {
+    width: 9rem;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

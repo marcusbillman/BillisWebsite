@@ -11,7 +11,47 @@
     .about-grid {
         grid-template-columns: 1fr;
     }
+    .featured-song {
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+        &__cover {
+            width: 12rem;
+            transform: none;
+        }
+        &__info {
+            margin-left: 3.2rem;
+        }
+        &__title {
+            font-size: 3.6rem;
+        }
+        &__right {
+            display: none;
+        }
+    }
     .texture {
         display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 6.4rem;
+    }
+    h2 {
+        font-size: 4.8rem;
+    }
+    .featured-song {
+        grid-template-columns: 1fr;
+        &__cover {
+            width: 9rem;
+        }
+        .button {
+            display: flex;
+            margin-right: 0;
+            margin-bottom: 1.6rem;
+        }
+    }
+    .song__cover {
+        width: 9rem;
     }
 }
