@@ -151,6 +151,7 @@ a {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  border-bottom: 0.3rem solid #ff7700;
 }
 
 .hero__content {
@@ -350,6 +351,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 12.8rem 0;
+  border-bottom: 0.3rem solid #ff7700;
 }
 
 .gallery-grid {
