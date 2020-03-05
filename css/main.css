@@ -64,6 +64,7 @@ p {
 }
 
 a {
+  position: relative;
   color: #ff7700;
   font-size: 1.8rem;
   text-decoration: none;
@@ -73,6 +74,22 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+a.link--hover::before {
+  content: "";
+  position: absolute;
+  height: 0.2rem;
+  background-color: currentColor;
+  left: 0;
+  right: 100%;
+  bottom: -0.4rem;
+  -webkit-transition: right 0.2s;
+  transition: right 0.2s;
+}
+
+a.link--hover:hover::before {
+  right: 0;
 }
 
 .material-icons {
@@ -125,6 +142,8 @@ a {
   letter-spacing: 0.4rem;
   color: white;
   opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .navbar__link:not(:last-child) {
@@ -134,6 +153,10 @@ a {
 .navbar__link a {
   font-size: inherit;
   color: inherit;
+}
+
+.navbar__link:hover {
+  opacity: 1;
 }
 
 /* ========== HERO ========== */
@@ -309,12 +332,26 @@ a {
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%);
 }
 
+.card__item {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
 .card__item .icon {
   margin-right: 1.6rem;
 }
 
 .card__item:not(:last-child) {
   margin-bottom: 1.6rem;
+}
+
+.card__item:hover {
+  color: #ff7700;
+}
+
+.card__item:hover a::after {
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
 }
 
 .card a {
@@ -331,6 +368,12 @@ a {
   line-height: 1;
   display: inline-block;
   margin-left: auto;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .contact__email {
@@ -458,10 +501,16 @@ a {
 
 .socials__item {
   opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .socials__item:not(:last-child) {
   margin-right: 1.6rem;
+}
+
+.socials__item:hover {
+  opacity: 1;
 }
 
 .icon {
