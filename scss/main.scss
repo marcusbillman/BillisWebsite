@@ -130,6 +130,10 @@ a {
     );
     &__logo {
         height: 7.2rem;
+        transition: filter 0.2s;
+        &:hover {
+            filter: brightness(0.5) sepia(1) hue-rotate(-11deg) saturate(5);
+        }
     }
     &__links {
         position: absolute;
@@ -296,12 +300,16 @@ a {
         transition: color 0.2s;
         .icon {
             margin-right: 1.6rem;
+            transition: filter 0.2s;
         }
         &:not(:last-child) {
             margin-bottom: 1.6rem;
         }
         &:hover {
             color: $clr-primary;
+            .icon {
+                filter: brightness(0.5) sepia(1) hue-rotate(-11deg) saturate(5);
+            }
             a::after {
                 transform: translateX(8px);
             }

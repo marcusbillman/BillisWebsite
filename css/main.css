@@ -122,6 +122,15 @@ a.link--hover:hover::before {
 
 .navbar__logo {
   height: 7.2rem;
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
+}
+
+.navbar__logo:hover {
+  -webkit-filter: brightness(0.5) sepia(1) hue-rotate(-11deg) saturate(5);
+          filter: brightness(0.5) sepia(1) hue-rotate(-11deg) saturate(5);
 }
 
 .navbar__links {
@@ -339,6 +348,10 @@ a.link--hover:hover::before {
 
 .card__item .icon {
   margin-right: 1.6rem;
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
 }
 
 .card__item:not(:last-child) {
@@ -347,6 +360,11 @@ a.link--hover:hover::before {
 
 .card__item:hover {
   color: #ff7700;
+}
+
+.card__item:hover .icon {
+  -webkit-filter: brightness(0.5) sepia(1) hue-rotate(-11deg) saturate(5);
+          filter: brightness(0.5) sepia(1) hue-rotate(-11deg) saturate(5);
 }
 
 .card__item:hover a::after {
