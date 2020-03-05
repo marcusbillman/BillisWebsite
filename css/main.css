@@ -352,21 +352,14 @@ a {
   padding: 12.8rem 0;
 }
 
-.gallery-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 4.4rem;
-}
-
 .gallery-grid {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.6rem;
-  margin: 0 5rem;
+}
+
+.gallery-grid:not(:last-child) {
+  margin-bottom: 4.4rem;
 }
 
 .gallery-grid .button {

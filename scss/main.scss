@@ -307,16 +307,12 @@ a {
     padding: 12.8rem 0;
 }
 
-.gallery-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 4.4rem;
-}
-
 .gallery-grid {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.6rem;
-    margin: 0 5rem;
+    &:not(:last-child) {
+        margin-bottom: 4.4rem;
+    }
     .button {
         width: 20rem;
         margin-right: 0;
