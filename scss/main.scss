@@ -434,11 +434,15 @@ a {
 /* ========== FOOTER ========== */
 
 .footer {
+    position: relative;
     margin-bottom: 7.2rem;
     &__content {
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+    &__socials {
+        margin-bottom: 1.6rem;
     }
     &__watermark {
         height: 13.6rem;

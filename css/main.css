@@ -491,6 +491,7 @@ a {
 
 /* ========== FOOTER ========== */
 .footer {
+  position: relative;
   margin-bottom: 7.2rem;
 }
 
@@ -504,6 +505,10 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footer__socials {
+  margin-bottom: 1.6rem;
 }
 
 .footer__watermark {
