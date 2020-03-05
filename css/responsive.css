@@ -1,4 +1,7 @@
 @media (max-width: 900px) {
+  .navbar__links {
+    display: none;
+  }
   .about-grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;

@@ -8,6 +8,9 @@
 // }
 
 @media (max-width: 900px) {
+    .navbar__links {
+        display: none;
+    }
     .about-grid {
         grid-template-columns: 1fr;
     }
