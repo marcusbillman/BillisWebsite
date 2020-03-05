@@ -308,10 +308,12 @@ a {
 }
 
 .gallery-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
     grid-gap: 1.6rem;
-    &:not(:last-child) {
-        margin-bottom: 4.4rem;
+    margin-bottom: 4.4rem;
+    &:last-child {
+        grid-template-columns: repeat(4, 20rem);
+        margin-bottom: 0;
     }
     .button {
         width: 20rem;

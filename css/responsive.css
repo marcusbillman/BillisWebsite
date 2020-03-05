@@ -34,6 +34,18 @@
   .contact-grid {
     justify-items: start;
   }
+  .gallery-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-grid:last-child {
+    -ms-grid-columns: (20rem)[2];
+        grid-template-columns: repeat(2, 20rem);
+  }
+  .gallery-grid:last-child .button {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
 }
 
 @media (max-width: 700px) {
@@ -59,6 +71,20 @@
   }
   .song__cover {
     width: 9rem;
+  }
+  .gallery-grid:last-child {
+    -ms-grid-columns: (15rem)[2];
+        grid-template-columns: repeat(2, 15rem);
+  }
+  .gallery-grid:last-child .button {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    width: 100%;
+  }
+  .gallery__image {
+    width: 15rem;
+    height: 15rem;
   }
   .footer__content {
     -webkit-box-orient: vertical;

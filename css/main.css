@@ -353,13 +353,16 @@ a {
 }
 
 .gallery-grid {
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
   grid-gap: 1.6rem;
+  margin-bottom: 4.4rem;
 }
 
-.gallery-grid:not(:last-child) {
-  margin-bottom: 4.4rem;
+.gallery-grid:last-child {
+  -ms-grid-columns: (20rem)[4];
+      grid-template-columns: repeat(4, 20rem);
+  margin-bottom: 0;
 }
 
 .gallery-grid .button {
