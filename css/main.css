@@ -454,21 +454,11 @@ a.link--hover:hover::before {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%);
   margin-right: 2.4rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.button--primary {
-  color: black;
-  background-color: #ff7700;
-}
-
-.button--outlined {
-  color: white;
-  background-color: transparent;
-  -webkit-clip-path: none;
-          clip-path: none;
-}
-
-.button--outlined::before {
+.button::before {
   content: "";
   display: block;
   position: absolute;
@@ -479,6 +469,23 @@ a.link--hover:hover::before {
   background-color: #474747;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%, 0 0.3rem, 0.3rem 0.3rem, 0.3rem calc(100% - 0.3rem), calc(100% - 1.4rem) calc(100% - 0.3rem), calc(100% - 0.3rem) calc(100% - 1.4rem), calc(100% - 0.3rem) 0.3rem, 0 0.3rem);
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%, 0 0.3rem, 0.3rem 0.3rem, 0.3rem calc(100% - 0.3rem), calc(100% - 1.4rem) calc(100% - 0.3rem), calc(100% - 0.3rem) calc(100% - 1.4rem), calc(100% - 0.3rem) 0.3rem, 0 0.3rem);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.button--primary {
+  color: black;
+  background-color: #ff7700;
+}
+
+.button--outlined {
+  color: white;
+  background-color: transparent;
+}
+
+.button--outlined::before {
+  opacity: 1;
 }
 
 .button--outlined.button--primary::before {

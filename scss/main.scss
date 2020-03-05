@@ -384,6 +384,33 @@ a {
     text-decoration: none;
     clip-path: $notch;
     margin-right: 2.4rem;
+    transition: 0.2s;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $clr-grey-3;
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            100% calc(100% - 1.2rem),
+            calc(100% - 1.2rem) 100%,
+            0 100%,
+            0 0.3rem,
+            0.3rem 0.3rem,
+            0.3rem calc(100% - 0.3rem),
+            calc(100% - 1.4rem) calc(100% - 0.3rem),
+            calc(100% - 0.3rem) calc(100% - 1.4rem),
+            calc(100% - 0.3rem) 0.3rem,
+            0 0.3rem
+        );
+        opacity: 0;
+        transition: opacity 0.2s;
+    }
     &--primary {
         color: black;
         background-color: $clr-primary;
@@ -391,30 +418,8 @@ a {
     &--outlined {
         color: white;
         background-color: transparent;
-        clip-path: none;
         &::before {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: $clr-grey-3;
-            clip-path: polygon(
-                0 0,
-                100% 0,
-                100% calc(100% - 1.2rem),
-                calc(100% - 1.2rem) 100%,
-                0 100%,
-                0 0.3rem,
-                0.3rem 0.3rem,
-                0.3rem calc(100% - 0.3rem),
-                calc(100% - 1.4rem) calc(100% - 0.3rem),
-                calc(100% - 0.3rem) calc(100% - 1.4rem),
-                calc(100% - 0.3rem) 0.3rem,
-                0 0.3rem
-            );
+            opacity: 1;
         }
     }
     &--outlined.button--primary::before {
