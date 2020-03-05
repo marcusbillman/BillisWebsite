@@ -254,6 +254,7 @@ a {
 /* ========== FOLLOW ========== */
 
 .contact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     justify-items: center;
 }
 

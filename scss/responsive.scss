@@ -31,6 +31,9 @@
     .texture {
         display: none;
     }
+    .contact-grid {
+        justify-items: start;
+    }
 }
 
 @media (max-width: 700px) {
