@@ -1,17 +1,6 @@
-/* ========== GLOBAL ========== */
+@import "_variables.scss";
 
-$clr-primary: #ff7700;
-$clr-grey-1: #1a1a1a;
-$clr-grey-2: #242424;
-$clr-grey-3: #474747;
-$clr-grey-4: #c2c2c2;
-$notch: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - 1.2rem),
-    calc(100% - 1.2rem) 100%,
-    0 100%
-);
+/* ========== GLOBAL ========== */
 
 * {
     margin: 0;
