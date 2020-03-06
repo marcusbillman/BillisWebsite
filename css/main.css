@@ -365,6 +365,12 @@ a.link--hover:hover::before {
   grid-column: 1 / span 2;
 }
 
+.biography__content {
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s;
+  transition: max-height 0.2s;
+}
+
 .biography .material-icons {
   font-size: 1.4rem;
 }

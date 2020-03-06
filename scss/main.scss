@@ -323,6 +323,10 @@ a {
     border-left: 0.3rem solid $clr-primary;
     padding: 2.4rem;
     grid-column: 1 / span 2;
+    &__content {
+        overflow: hidden;
+        transition: max-height 0.2s;
+    }
     .material-icons {
         font-size: 1.4rem;
     }

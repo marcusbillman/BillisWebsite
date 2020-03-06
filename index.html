@@ -101,7 +101,7 @@
                 </h2>
                 <div class="about-grid grid">
                     <blockquote class="biography">
-                        <div class="biography__content">
+                        <div class="biography__content" id="bioContent">
                             <p>
                                 <span class="primary">Billis</span> is a rapper
                                 and producer from northern Sweden. In March 2018
@@ -129,14 +129,18 @@
                                 All lyrics are written, performed and produced
                                 by Billis.
                             </p>
-                            <a
-                                class="link--hover"
-                                href=""
-                                aria-label="Show more"
-                            >
-                                <i class="material-icons">add</i> Show more
-                            </a>
                         </div>
+                        <a
+                            class="link--hover"
+                            id="showMoreLink"
+                            href=""
+                            aria-label="Show more"
+                        >
+                            <i class="material-icons" id="showMoreLinkIcon">
+                                keyboard_arrow_down
+                            </i>
+                            <span id="showMoreLinkText">Show more</span>
+                        </a>
                     </blockquote>
                     <img class="texture" src="img/texture.svg" alt="" />
                 </div>
