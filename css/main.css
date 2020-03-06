@@ -453,6 +453,10 @@ a.link--hover:hover::before {
   margin-bottom: 0.4rem;
 }
 
+.song .button {
+  margin-bottom: 1rem;
+}
+
 /* ========== FOLLOW ========== */
 .contact-grid {
   -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
