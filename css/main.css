@@ -600,6 +600,7 @@ a.link--hover:hover::before {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: -1;
 }
 
 .footer__fineprint {
