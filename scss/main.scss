@@ -341,10 +341,6 @@ a {
 
 /* ========== MUSIC ========== */
 
-.songs-grid {
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-}
-
 .featured-song {
     grid-template-columns: minmax(40rem, 1fr) minmax(40rem, 1fr) minmax(0, 1fr);
     background: $clr-grey-2;
@@ -370,6 +366,9 @@ a {
     &__cover {
         width: 16rem;
         transform: translateX(-3.2rem);
+    }
+    &__middle {
+        display: flex;
     }
     .line {
         height: 0.3rem;
@@ -402,7 +401,6 @@ a {
 /* ========== FOLLOW ========== */
 
 .contact-grid {
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     justify-items: center;
 }
 

@@ -1,3 +1,5 @@
+$clr-grey-2: #242424;
+
 @media (max-width: 900px) {
     .navbar {
         &__logo {
@@ -12,6 +14,7 @@
     }
     .featured-song {
         grid-template-columns: 1fr 1fr;
+        background: $clr-grey-2;
         padding: 2rem;
         &__cover {
             width: 12rem;
@@ -23,15 +26,21 @@
         &__title {
             font-size: 3.6rem;
         }
+        &__middle {
+            flex-direction: column;
+            .button {
+                margin-right: 0;
+                &:first-child {
+                    margin-bottom: 1.6rem;
+                }
+            }
+        }
         &__right {
             display: none;
         }
     }
     .texture {
         display: none;
-    }
-    .contact-grid {
-        justify-items: start;
     }
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -57,9 +66,7 @@
             width: 9rem;
         }
         .button {
-            display: flex;
             margin-right: 0;
-            margin-bottom: 1.6rem;
         }
     }
     .song__cover {
@@ -90,5 +97,22 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
+    }
+}
+
+@media (max-width: 60rem) {
+    .songs-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+        justify-items: start;
+    }
+}
+
+@media (max-width: 40rem) {
+    .songs-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
     }
 }
