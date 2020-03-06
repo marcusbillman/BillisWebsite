@@ -568,6 +568,11 @@ a.link--hover:hover::before {
   grid-column: 4;
 }
 
+.gallery-grid .button .icon {
+  width: 1.4em;
+  margin-right: 0.4em;
+}
+
 .gallery__image {
   width: 20rem;
   height: 20rem;
