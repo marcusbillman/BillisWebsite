@@ -601,4 +601,20 @@ a.link--hover:hover::before {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+
+.footer__fineprint {
+  text-align: right;
+}
+
+.footer__credit {
+  opacity: 0.5;
+}
+
+.footer__credit a {
+  color: inherit;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
 /*# sourceMappingURL=main.css.map */

@@ -503,4 +503,16 @@ a {
         left: 50%;
         transform: translateX(-50%);
     }
+    &__fineprint {
+        text-align: right;
+    }
+    &__credit {
+        opacity: 0.5;
+        a {
+            color: inherit;
+        }
+    }
+    p {
+        margin-bottom: 0;
+    }
 }

@@ -95,6 +95,9 @@
   .footer__socials {
     margin-bottom: 1.6rem;
   }
+  .footer__fineprint {
+    text-align: center;
+  }
   .footer__watermark {
     position: absolute;
     top: 50%;
