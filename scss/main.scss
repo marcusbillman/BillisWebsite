@@ -111,11 +111,6 @@ a {
 /* ========== NAVBAR ========== */
 
 .navbar {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -128,6 +123,13 @@ a {
         rgba(0, 0, 0, 0.8) 50%,
         rgba(0, 0, 0, 0) 100%
     );
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
     &__logo {
         height: 7.2rem;
         transition: filter 0.2s;
