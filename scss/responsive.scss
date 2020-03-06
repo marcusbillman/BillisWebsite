@@ -80,10 +80,14 @@
         &__content {
             flex-direction: column;
         }
+        &__socials {
+            margin-bottom: 1.6rem;
+        }
         &__watermark {
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 }

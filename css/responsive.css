@@ -92,11 +92,15 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .footer__socials {
+    margin-bottom: 1.6rem;
+  }
   .footer__watermark {
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 /*# sourceMappingURL=responsive.css.map */

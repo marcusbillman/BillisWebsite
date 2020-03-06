@@ -593,12 +593,12 @@ a.link--hover:hover::before {
           justify-content: space-between;
 }
 
-.footer__socials {
-  margin-bottom: 1.6rem;
-}
-
 .footer__watermark {
   height: 13.6rem;
   opacity: 0.05;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=main.css.map */

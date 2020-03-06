@@ -496,11 +496,11 @@ a {
         align-items: center;
         justify-content: space-between;
     }
-    &__socials {
-        margin-bottom: 1.6rem;
-    }
     &__watermark {
         height: 13.6rem;
         opacity: 0.05;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
