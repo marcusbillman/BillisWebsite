@@ -20,6 +20,16 @@ body {
   overflow-x: hidden;
 }
 
+::-moz-selection {
+  color: black;
+  background-color: #ff7700;
+}
+
+::selection {
+  color: black;
+  background-color: #ff7700;
+}
+
 .primary {
   color: #ff7700;
 }

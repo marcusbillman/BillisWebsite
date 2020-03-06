@@ -22,6 +22,11 @@ body {
     overflow-x: hidden;
 }
 
+::selection {
+    color: black;
+    background-color: $clr-primary;
+}
+
 .primary {
     color: $clr-primary;
 }
