@@ -86,7 +86,7 @@
     width: 15rem;
     height: 15rem;
   }
-  .footer__content {
+  .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

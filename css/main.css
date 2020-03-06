@@ -242,9 +242,6 @@ a.link--hover:hover::before {
   background: rgba(0, 0, 0, 0.5);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(50%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
-}
-
-.navbar__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,8 +251,7 @@ a.link--hover:hover::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 20px;
 }
 
 .navbar__logo {
@@ -583,10 +579,7 @@ a.link--hover:hover::before {
 /* ========== FOOTER ========== */
 .footer {
   position: relative;
-  margin-bottom: 7.2rem;
-}
-
-.footer__content {
+  margin-bottom: 12rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,6 +589,7 @@ a.link--hover:hover::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 20px;
 }
 
 .footer__watermark {

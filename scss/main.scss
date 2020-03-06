@@ -241,13 +241,10 @@ a {
         rgba(0, 0, 0, 0.8) 50%,
         rgba(0, 0, 0, 0) 100%
     );
-    &__content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 20px;
     &__logo {
         height: 7.2rem;
         transition: filter 0.2s;
@@ -494,12 +491,11 @@ a {
 
 .footer {
     position: relative;
-    margin-bottom: 7.2rem;
-    &__content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+    margin-bottom: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
     &__watermark {
         height: 13.6rem;
         opacity: 0.05;
