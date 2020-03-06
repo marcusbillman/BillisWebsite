@@ -23,7 +23,7 @@ body {
   color: #ff7700;
 }
 
-/* ========== CONTAINER AND SECTIONS ========== */
+/* ========== GENERAL ========== */
 .container {
   width: 100%;
   max-width: 1400px;
@@ -34,6 +34,17 @@ body {
 section {
   margin-bottom: 12rem;
   scroll-margin-top: 15rem;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* ========== TYPOGRAPHY ========== */
@@ -95,6 +106,124 @@ a.link--hover:hover::before {
 .material-icons {
   font-size: 1.4em;
   margin-right: 0.4em;
+}
+
+/* ========== BUTTON ========== */
+.button {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-color: #474747;
+  padding: 1.6rem 3.2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%);
+  margin-right: 2.4rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #474747;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%, 0 0.3rem, 0.3rem 0.3rem, 0.3rem calc(100% - 0.3rem), calc(100% - 1.4rem) calc(100% - 0.3rem), calc(100% - 0.3rem) calc(100% - 1.4rem), calc(100% - 0.3rem) 0.3rem, 0 0.3rem);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%, 0 0.3rem, 0.3rem 0.3rem, 0.3rem calc(100% - 0.3rem), calc(100% - 1.4rem) calc(100% - 0.3rem), calc(100% - 0.3rem) calc(100% - 1.4rem), calc(100% - 0.3rem) 0.3rem, 0 0.3rem);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.button--primary {
+  color: black;
+  background-color: #ff7700;
+}
+
+.button--outlined {
+  color: white;
+  background-color: transparent;
+}
+
+.button--outlined::before {
+  opacity: 1;
+}
+
+.button--outlined.button--primary::before {
+  background-color: #ff7700;
+}
+
+.button--small {
+  font-size: 1.1rem;
+  padding: 1.1rem 2.4rem;
+  margin-right: 1.6rem;
+}
+
+/* ========== SOCIALS ========== */
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.socials__item {
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.socials__item:hover {
+  opacity: 1;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon--spotify {
+  background-image: url("../img/icons/spotify-brands.svg");
+}
+
+.icon--apple-music {
+  background-image: url("../img/icons/apple-brands.svg");
+}
+
+.icon--amazon-music {
+  background-image: url("../img/icons/amazon-brands.svg");
+}
+
+.icon--youtube {
+  background-image: url("../img/icons/youtube-brands.svg");
+}
+
+.icon--instagram {
+  background-image: url("../img/icons/instagram-brands.svg");
+}
+
+.icon--facebook {
+  background-image: url("../img/icons/facebook-f-brands.svg");
 }
 
 /* ========== NAVBAR ========== */
@@ -247,17 +376,6 @@ a.link--hover:hover::before {
 }
 
 /* ========== MUSIC ========== */
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2.4rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .songs-grid {
   -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -443,133 +561,6 @@ a.link--hover:hover::before {
   height: 20rem;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.gallery__arrow {
-  color: #474747;
-}
-
-.gallery__arrow .material-icons {
-  font-size: 5rem;
-  margin: 0;
-}
-
-/* ========== BUTTONS ========== */
-.button {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
-  background-color: #474747;
-  padding: 1.6rem 3.2rem;
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-decoration: none;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%);
-  margin-right: 2.4rem;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.button::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #474747;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%, 0 0.3rem, 0.3rem 0.3rem, 0.3rem calc(100% - 0.3rem), calc(100% - 1.4rem) calc(100% - 0.3rem), calc(100% - 0.3rem) calc(100% - 1.4rem), calc(100% - 0.3rem) 0.3rem, 0 0.3rem);
-          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%, 0 0.3rem, 0.3rem 0.3rem, 0.3rem calc(100% - 0.3rem), calc(100% - 1.4rem) calc(100% - 0.3rem), calc(100% - 0.3rem) calc(100% - 1.4rem), calc(100% - 0.3rem) 0.3rem, 0 0.3rem);
-  opacity: 0;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
-
-.button--primary {
-  color: black;
-  background-color: #ff7700;
-}
-
-.button--outlined {
-  color: white;
-  background-color: transparent;
-}
-
-.button--outlined::before {
-  opacity: 1;
-}
-
-.button--outlined.button--primary::before {
-  background-color: #ff7700;
-}
-
-.button--small {
-  font-size: 1.1rem;
-  padding: 1.1rem 2.4rem;
-  margin-right: 1.6rem;
-}
-
-/* ========== SOCIALS ========== */
-.socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-}
-
-.socials__item {
-  opacity: 0.7;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
-
-.socials__item:not(:last-child) {
-  margin-right: 1.6rem;
-}
-
-.socials__item:hover {
-  opacity: 1;
-}
-
-.icon {
-  width: 2rem;
-  height: 2rem;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon--spotify {
-  background-image: url("../img/icons/spotify-brands.svg");
-}
-
-.icon--apple-music {
-  background-image: url("../img/icons/apple-brands.svg");
-}
-
-.icon--amazon-music {
-  background-image: url("../img/icons/amazon-brands.svg");
-}
-
-.icon--youtube {
-  background-image: url("../img/icons/youtube-brands.svg");
-}
-
-.icon--instagram {
-  background-image: url("../img/icons/instagram-brands.svg");
-}
-
-.icon--facebook {
-  background-image: url("../img/icons/facebook-f-brands.svg");
 }
 
 /* ========== FOOTER ========== */
