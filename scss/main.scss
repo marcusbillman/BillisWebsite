@@ -194,32 +194,9 @@ a {
             opacity: 1;
         }
     }
-}
-
-.icon {
-    width: 2rem;
-    height: 2rem;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.icon--spotify {
-    background-image: url("../img/icons/spotify-brands.svg");
-}
-.icon--apple-music {
-    background-image: url("../img/icons/apple-brands.svg");
-}
-.icon--amazon-music {
-    background-image: url("../img/icons/amazon-brands.svg");
-}
-.icon--youtube {
-    background-image: url("../img/icons/youtube-brands.svg");
-}
-.icon--instagram {
-    background-image: url("../img/icons/instagram-brands.svg");
-}
-.icon--facebook {
-    background-image: url("../img/icons/facebook-f-brands.svg");
+    &__link {
+        color: white;
+    }
 }
 
 /* ========== NAVBAR ========== */
@@ -409,18 +386,14 @@ a {
     clip-path: $notch;
     &__item {
         transition: color 0.2s;
-        .icon {
+        .fab {
             margin-right: 1.6rem;
-            transition: filter 0.2s;
         }
         &:not(:last-child) {
             margin-bottom: 1.6rem;
         }
         &:hover {
             color: $clr-primary;
-            .icon {
-                filter: brightness(0.5) sepia(1) hue-rotate(-11deg) saturate(5);
-            }
             a::after {
                 transform: translateX(8px);
             }
@@ -471,8 +444,7 @@ a {
         width: 20rem;
         margin-right: 0;
         grid-column: 4;
-        .icon {
-            width: 1.4em;
+        .fab {
             margin-right: 0.4em;
         }
     }

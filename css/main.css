@@ -5957,35 +5957,8 @@ a.link--hover:hover::before {
   opacity: 1;
 }
 
-.icon {
-  width: 2rem;
-  height: 2rem;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon--spotify {
-  background-image: url("../img/icons/spotify-brands.svg");
-}
-
-.icon--apple-music {
-  background-image: url("../img/icons/apple-brands.svg");
-}
-
-.icon--amazon-music {
-  background-image: url("../img/icons/amazon-brands.svg");
-}
-
-.icon--youtube {
-  background-image: url("../img/icons/youtube-brands.svg");
-}
-
-.icon--instagram {
-  background-image: url("../img/icons/instagram-brands.svg");
-}
-
-.icon--facebook {
-  background-image: url("../img/icons/facebook-f-brands.svg");
+.socials__link {
+  color: white;
 }
 
 /* ========== NAVBAR ========== */
@@ -6234,12 +6207,8 @@ a.link--hover:hover::before {
   transition: color 0.2s;
 }
 
-.card__item .icon {
+.card__item .fab {
   margin-right: 1.6rem;
-  -webkit-transition: -webkit-filter 0.2s;
-  transition: -webkit-filter 0.2s;
-  transition: filter 0.2s;
-  transition: filter 0.2s, -webkit-filter 0.2s;
 }
 
 .card__item:not(:last-child) {
@@ -6248,11 +6217,6 @@ a.link--hover:hover::before {
 
 .card__item:hover {
   color: #ff7700;
-}
-
-.card__item:hover .icon {
-  -webkit-filter: brightness(0.5) sepia(1) hue-rotate(-11deg) saturate(5);
-          filter: brightness(0.5) sepia(1) hue-rotate(-11deg) saturate(5);
 }
 
 .card__item:hover a::after {
@@ -6323,8 +6287,7 @@ a.link--hover:hover::before {
   grid-column: 4;
 }
 
-.gallery-grid .button .icon {
-  width: 1.4em;
+.gallery-grid .button .fab {
   margin-right: 0.4em;
 }
 
