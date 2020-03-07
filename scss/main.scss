@@ -43,7 +43,9 @@ body {
 }
 
 section {
-    margin-bottom: 8rem;
+    &:not(.gallery-section) {
+        margin-bottom: 8rem;
+    }
     scroll-margin-top: 15rem;
 }
 
@@ -446,7 +448,6 @@ a {
     flex-direction: column;
     align-items: center;
     padding: 8rem 0;
-    border-bottom: 0.3rem solid $clr-primary;
 }
 
 .gallery-grid {
@@ -480,8 +481,16 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 8rem;
-    padding: 0 20px;
+    padding: 8rem 20px;
+    &__line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0.3rem;
+        background-color: $clr-primary;
+        z-index: 1;
+    }
     &__watermark {
         height: 13.6rem;
         opacity: 0.05;
