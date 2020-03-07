@@ -282,6 +282,9 @@ a {
     }
     .button {
         margin-right: 0;
+        .material-icons {
+            animation: bounce-down 0.5s ease-in-out alternate infinite;
+        }
     }
     &__bg {
         position: absolute;
@@ -510,5 +513,16 @@ a {
     }
     p {
         margin-bottom: 0;
+    }
+}
+
+/* ========== ANIMATIONS ========== */
+
+@keyframes bounce-down {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(3px);
     }
 }

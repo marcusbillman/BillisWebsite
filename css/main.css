@@ -6081,6 +6081,11 @@ a.link--hover:hover::before {
   margin-right: 0;
 }
 
+.hero .button .material-icons {
+  -webkit-animation: bounce-down 0.5s ease-in-out alternate infinite;
+          animation: bounce-down 0.5s ease-in-out alternate infinite;
+}
+
 .hero__bg {
   position: absolute;
   top: 0;
@@ -6369,5 +6374,27 @@ a.link--hover:hover::before {
 
 .footer p {
   margin-bottom: 0;
+}
+
+/* ========== ANIMATIONS ========== */
+@-webkit-keyframes bounce-down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+}
+@keyframes bounce-down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
 }
 /*# sourceMappingURL=main.css.map */
