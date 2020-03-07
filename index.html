@@ -23,7 +23,7 @@
         <title>BILLIS</title>
     </head>
     <body>
-        <nav class="navbar">
+        <nav class="navbar" data-aos="slide-down" data-aos-delay="1000">
             <a class="navbar__logo-link" href="/">
                 <img
                     class="navbar__logo"
@@ -100,13 +100,28 @@
             </ul>
         </nav>
         <section class="hero">
-            <div class="hero__content">
+            <div
+                class="hero__content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+            >
                 <p class="hero__above-heading">THIS IS MY</p>
                 <h1 class="hero__heading">PSYCHOPEDIA</h1>
                 <a href="#about-section" class="button" aria-label="Scroll down"
                     ><i class="material-icons">arrow_downward</i> DIVE IN</a
                 >
             </div>
+            <div
+                class="hero__line"
+                data-aos="slide-right"
+                data-aos-delay="500"
+            ></div>
+            <div
+                class="hero__bg"
+                data-aos="zoom-out"
+                data-aos-duration="1000"
+            ></div>
         </section>
         <div class="container">
             <section class="about-section" id="about-section">
@@ -421,7 +436,9 @@
             </div>
         </footer>
         <script>
-            AOS.init();
+            AOS.init({
+                duration: 800
+            });
         </script>
     </body>
 </html>
