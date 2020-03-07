@@ -5935,29 +5935,29 @@ a.link--hover:hover::before {
   margin-right: 1.6rem;
 }
 
-/* ========== SOCIALS ========== */
-.socials {
+/* ========== PLATFORMS ========== */
+.platforms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-.socials__item {
+.platforms__item {
   opacity: 0.7;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.socials__item:not(:last-child) {
+.platforms__item:not(:last-child) {
   margin-right: 1.6rem;
 }
 
-.socials__item:hover {
+.platforms__item:hover {
   opacity: 1;
 }
 
-.socials__link {
+.platforms__link {
   color: white;
 }
 
