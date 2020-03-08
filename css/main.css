@@ -5757,6 +5757,7 @@ readers do not read off random characters that represent icons */
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
