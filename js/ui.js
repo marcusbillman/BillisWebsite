@@ -1,3 +1,38 @@
+/* ========== ANIMATED OVERLAY ========== */
+
+var tl = anime.timeline({
+    easing: "cubicBezier(0.770, 0.000, 0.175, 1.000)",
+    duration: 600,
+    complete: function(anim) {
+        document.querySelector(".overlay").style.display = "none";
+    }
+});
+
+tl.add(
+    {
+        targets: ".overlay__line",
+        translateX: ["-100%", "100%"],
+        opacity: 0,
+        easing: "cubicBezier(0.550, 0.055, 0.675, 0.190)",
+        duration: 300,
+        complete: function(anim) {
+            document.dispatchEvent(new Event("animation-ready"));
+        }
+    },
+    1000
+)
+    .add({
+        targets: ".overlay__top",
+        translateY: "-100%"
+    })
+    .add(
+        {
+            targets: ".overlay__bottom",
+            translateY: "100%"
+        },
+        "-=600"
+    );
+
 /* ========== SHOW MORE ========== */
 
 const bioContent = document.getElementById("bioContent");

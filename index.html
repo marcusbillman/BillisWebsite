@@ -24,6 +24,11 @@
         <title>BILLIS</title>
     </head>
     <body>
+        <div class="overlay">
+            <div class="overlay__top"></div>
+            <div class="overlay__bottom"></div>
+            <div class="overlay__line"></div>
+        </div>
         <nav class="navbar" data-aos="slide-down" data-aos-delay="800">
             <a class="navbar__logo-link" href="/">
                 <img
@@ -511,7 +516,8 @@
             AOS.init({
                 duration: 500,
                 easing: "ease-out-cubic",
-                once: true
+                once: true,
+                startEvent: "animation-ready"
             });
         </script>
     </body>
