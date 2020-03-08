@@ -6014,8 +6014,8 @@ a.link--hover:hover::before {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(50%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, black 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
