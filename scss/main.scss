@@ -214,6 +214,18 @@ a {
         width: 100%;
         height: 50%;
     }
+    &__logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 16rem;
+        &--top {
+            bottom: 0;
+        }
+        &--bottom {
+            top: 0;
+        }
+    }
     &__line {
         position: absolute;
         top: 50%;
