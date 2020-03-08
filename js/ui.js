@@ -19,7 +19,7 @@ tl.add(
             document.dispatchEvent(new Event("animation-ready"));
         }
     },
-    1000
+    500
 )
     .add({
         targets: ".overlay__top",
