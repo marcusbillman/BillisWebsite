@@ -5763,18 +5763,18 @@ html {
 body {
   font-family: "Work Sans", sans-serif;
   color: #c2c2c2;
-  background-color: #1a1a1a;
+  background: #1a1a1a;
   overflow-x: hidden;
 }
 
 ::-moz-selection {
   color: black;
-  background-color: #ff7700;
+  background: #ff7700;
 }
 
 ::selection {
   color: black;
-  background-color: #ff7700;
+  background: #ff7700;
 }
 
 .primary {
@@ -5857,7 +5857,7 @@ a.link--hover::before {
   content: "";
   position: absolute;
   height: 0.2rem;
-  background-color: currentColor;
+  background: currentColor;
   left: 0;
   right: 100%;
   bottom: -0.4rem;
@@ -5887,7 +5887,7 @@ a.link--hover:hover::before {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  background-color: #474747;
+  background: #474747;
   padding: 1.6rem 3.2rem;
   font-size: 1.6rem;
   font-weight: bold;
@@ -5907,7 +5907,7 @@ a.link--hover:hover::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #474747;
+  background: #474747;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%, 0 0.3rem, 0.3rem 0.3rem, 0.3rem calc(100% - 0.3rem), calc(100% - 1.4rem) calc(100% - 0.3rem), calc(100% - 0.3rem) calc(100% - 1.4rem), calc(100% - 0.3rem) 0.3rem, 0 0.3rem);
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%, 0 0.3rem, 0.3rem 0.3rem, 0.3rem calc(100% - 0.3rem), calc(100% - 1.4rem) calc(100% - 0.3rem), calc(100% - 0.3rem) calc(100% - 1.4rem), calc(100% - 0.3rem) 0.3rem, 0 0.3rem);
   opacity: 0;
@@ -5917,12 +5917,12 @@ a.link--hover:hover::before {
 
 .button--primary {
   color: black;
-  background-color: #ff7700;
+  background: #ff7700;
 }
 
 .button--outlined {
   color: white;
-  background-color: transparent;
+  background: transparent;
 }
 
 .button--outlined::before {
@@ -5930,7 +5930,7 @@ a.link--hover:hover::before {
 }
 
 .button--outlined.button--primary::before {
-  background-color: #ff7700;
+  background: #ff7700;
 }
 
 .button--small {
@@ -5974,7 +5974,7 @@ a.link--hover:hover::before {
 }
 
 .overlay__top, .overlay__bottom {
-  background-color: black;
+  background: black;
   width: 100%;
   height: 50%;
 }
@@ -6001,7 +6001,7 @@ a.link--hover:hover::before {
   height: 0.3rem;
   width: 100%;
   z-index: 1;
-  background-color: #ff7700;
+  background: #ff7700;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
@@ -6147,13 +6147,13 @@ a.link--hover:hover::before {
   bottom: 0;
   width: 100%;
   height: 0.3rem;
-  background-color: #ff7700;
+  background: #ff7700;
   z-index: 1;
 }
 
 /* ========== ABOUT ========== */
 .biography {
-  background-color: #242424;
+  background: #242424;
   border-left: 0.3rem solid #ff7700;
   padding: 2.4rem;
   -ms-grid-column: 1;
@@ -6265,7 +6265,7 @@ a.link--hover:hover::before {
 .card {
   color: white;
   list-style: none;
-  background-color: #242424;
+  background: #242424;
   width: 100%;
   padding: 3.2rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.2rem), calc(100% - 1.2rem) 100%, 0 100%);
@@ -6322,7 +6322,7 @@ a.link--hover:hover::before {
 
 /* ========== GALLERY ========== */
 .gallery-section {
-  background-color: #242424;
+  background: #242424;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6388,7 +6388,7 @@ a.link--hover:hover::before {
   left: 0;
   width: 100%;
   height: 0.3rem;
-  background-color: #ff7700;
+  background: #ff7700;
   z-index: 1;
 }
 

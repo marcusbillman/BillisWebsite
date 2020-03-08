@@ -21,13 +21,13 @@ html {
 body {
     font-family: "Work Sans", sans-serif;
     color: $clr-grey-4;
-    background-color: $clr-grey-1;
+    background: $clr-grey-1;
     overflow-x: hidden;
 }
 
 ::selection {
     color: black;
-    background-color: $clr-primary;
+    background: $clr-primary;
 }
 
 .primary {
@@ -100,7 +100,7 @@ a {
             content: "";
             position: absolute;
             height: 0.2rem;
-            background-color: currentColor;
+            background: currentColor;
             left: 0;
             right: 100%;
             bottom: -0.4rem;
@@ -127,7 +127,7 @@ a {
     align-items: center;
     justify-content: center;
     color: white;
-    background-color: $clr-grey-3;
+    background: $clr-grey-3;
     padding: 1.6rem 3.2rem;
     font-size: 1.6rem;
     font-weight: bold;
@@ -143,7 +143,7 @@ a {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: $clr-grey-3;
+        background: $clr-grey-3;
         clip-path: polygon(
             0 0,
             100% 0,
@@ -163,17 +163,17 @@ a {
     }
     &--primary {
         color: black;
-        background-color: $clr-primary;
+        background: $clr-primary;
     }
     &--outlined {
         color: white;
-        background-color: transparent;
+        background: transparent;
         &::before {
             opacity: 1;
         }
     }
     &--outlined.button--primary::before {
-        background-color: $clr-primary;
+        background: $clr-primary;
     }
     &--small {
         font-size: 1.1rem;
@@ -211,7 +211,7 @@ a {
     z-index: 2;
     &__top,
     &__bottom {
-        background-color: black;
+        background: black;
         width: 100%;
         height: 50%;
     }
@@ -233,7 +233,7 @@ a {
         height: 0.3rem;
         width: 100%;
         z-index: 1;
-        background-color: $clr-primary;
+        background: $clr-primary;
         transform: translateX(-100%);
     }
 }
@@ -340,7 +340,7 @@ a {
         bottom: 0;
         width: 100%;
         height: 0.3rem;
-        background-color: $clr-primary;
+        background: $clr-primary;
         z-index: 1;
     }
 }
@@ -348,7 +348,7 @@ a {
 /* ========== ABOUT ========== */
 
 .biography {
-    background-color: $clr-grey-2;
+    background: $clr-grey-2;
     border-left: 0.3rem solid $clr-primary;
     padding: 2.4rem;
     grid-column: 1 / span 2;
@@ -438,7 +438,7 @@ a {
 .card {
     color: white;
     list-style: none;
-    background-color: $clr-grey-2;
+    background: $clr-grey-2;
     width: 100%;
     padding: 3.2rem;
     clip-path: $notch;
@@ -482,7 +482,7 @@ a {
 /* ========== GALLERY ========== */
 
 .gallery-section {
-    background-color: $clr-grey-2;
+    background: $clr-grey-2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -527,7 +527,7 @@ a {
         left: 0;
         width: 100%;
         height: 0.3rem;
-        background-color: $clr-primary;
+        background: $clr-primary;
         z-index: 1;
     }
     &__watermark {
